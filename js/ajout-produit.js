@@ -30,7 +30,7 @@ function getBase64FromImage(imageFile) {
       quantité.value = "";
       prix.value = "";
       Photo.value = "";
-      ;
+      window.location.replace("./nos-produit.html")
     } else {
       alert("entre une photo");
     }
