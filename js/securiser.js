@@ -1,10 +1,6 @@
-function ajouterProduit() {
-    const user = JSON.parse(localStorage.getItem('UserConnecter'))
-    console.log(users.admin);
-    if (user.admin == true) {
-        location.href("./ajout-produit.html")
-        console.log(user.admin);
-    } else {
-        location.href = "./index.html"
-    }
+function security() {
+  const user = JSON.parse(localStorage.getItem("UserConnecter"));
+  if (user == null) {
+    window.location.replace("./index.html");
+  }
 }

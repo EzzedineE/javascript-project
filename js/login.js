@@ -9,6 +9,7 @@ function login(event) {
         if (conected) {
             localStorage.setItem("UserConnecter", JSON.stringify(conected));
             close.click()
+            window.location.replace("./nos-produit.html")
         }
         else
         {
