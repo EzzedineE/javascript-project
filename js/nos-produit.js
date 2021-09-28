@@ -21,6 +21,9 @@ function affichage(produit) {
 }
 function rechercher() {
     const rechercheArr = produit.filter((element) =>
-      element.nom.toLowerCase().includes(recherche.value.toLowerCase()))
+      element.nom.toLowerCase().includes(recherche.value.toLowerCase())||
+      element.description.toLowerCase().includes(recherche.value.toLowerCase())||
+      element.quantité.toLowerCase().includes(recherche.value.toLowerCase())||
+      element.prix.toLowerCase().includes(recherche.value.toLowerCase()))
       affichage(rechercheArr)
 }
