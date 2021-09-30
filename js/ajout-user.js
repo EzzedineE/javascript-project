@@ -10,7 +10,7 @@ function ajout() {
     alert("email existante");
   } else {
     Users.push({
-      Name: Name.value,
+      nom: Name.value,
       email: email.value,
       password: password.value,
     });
