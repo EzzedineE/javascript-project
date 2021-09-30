@@ -14,7 +14,7 @@
   <link href="css/font-awesome.css" rel="stylesheet" />
 </head>
 
-<body onload="security();profil()">
+<body>
   <div class="header-most-top">
     <p>Grocery Offer Zone Top Deals & Discounts</p>
   </div>
@@ -36,13 +36,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="./profil.html"><b>Mon Profil</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./nos-produit.html"><b> Gestion des Produits</b></a>
+              <a class="nav-link" href="./nos-produit.html"><b>Gestion des Produits</b></a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item active">
               <a class="nav-link" href="./gestion-utilisateur.html" >
              <b>Gestion d'utilisateurs</b>
               </a>
@@ -50,34 +50,38 @@
           </ul>
         </div>
       </nav> 
-      <!-- header-bot -->
-      <div class="modal-content container">
-        <div class="modal-body modal-body-sub_agile container">
+      <div class="modal-content">
+        <div class="modal-body modal-body-sub_agile">
+          <div class="main-mailposi">
+            <span class="fa fa-envelope-o" aria-hidden="true"></span>
+          </div>
           <div class="modal_body_left modal_body_left1">
-            <h3 class="agileinfo_sign">Profil</h3>
-            <div class="clearfix"></div>
-          </div>
-          <div>
-            <p id="connecte"></p>
-          </div>
-          <div>
-            <label for="nom1"><b>Nom</b></label>
-            <input type="text" placeholder="Votre Nom" id="nom1" class="rounded formulaire" />
-            <label for="email"><b>E-mail</b></label>
-            <input type="email" placeholder="Votre E-mail" id="email1" class="rounded formulaire" />
-            <label for="password1"><b>Mot De Passe</b></label>
-            <input type="password" placeholder="Votre Mot de passe" id="password1" class="rounded formulaire" />
-            <div>
-              <button class="mt-2 btn btn-primary formulaire " id="valider" type="button" onclick="valider()">
-                <i class="fas fa-check"></i> Valider
-              </button>
-            </div>
+            <h3 class="agileinfo_sign">Ajouter utilisateur</h3>
+            <form>
+              <div class="styled-input agile-styled-input-top">
+                <input type="text" placeholder="Name" name="Name" id="Name" required="" />
+              </div>
+              <div class="styled-input">
+                <input type="email" placeholder="E-mail" name="Email" id="email" required="" />
+              </div>
+              <div class="styled-input">
+                <input type="password" placeholder="Password" name="password" id="password1" required="" />
+              </div>
+              <div class="styled-input">
+                <input type="password" placeholder="Confirm Password" name="Confirm Password" id="password2"
+                  required="" />
+              </div>
+              <a href="./gestion-utilisateur.html" class="mt-2 rounded btn btn-secondary"><i class="fa fa-arrow-left"></i> Annuler</a>
+              <button class="mt-2 rounded btn btn-primary" onclick="ajout()"><i class="fa fa-save"></i> Ajouter</button>
+              
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <script src="./js/securiser.js"></script>
-    <script src="./js/profil.js"></script>
+  </div>
+
+  <script src="./js/ajout-user.js"></script>
 </body>
 
 </html>

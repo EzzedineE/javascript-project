@@ -24,7 +24,7 @@ function getBase64FromImage(imageFile) {
         prix: prix.value,
         Photo: base64,
       });
-      localStorage.setItem("produit", JSON.stringify(produit))
+      localStorage.setItem("produit", JSON.stringify(produit));
       nom.value = "";
       description.value = "";
       quantité.value = "";

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modifier-produit</title>
+    <title>Modifier utilisateurs</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -24,6 +24,9 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/font-awesome.css" rel="stylesheet" />
   </head>
+
+
+
   <body onload="security();modifier()">
     <div class="header-most-top">
       <p>Grocery Offer Zone Top Deals & Discounts</p>
@@ -48,10 +51,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="./profil.html"><b>Mon Profil</b></a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="./nos-produit.html"><b>Gestion des Produits</b></a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item active">
                 <a class="nav-link" href="./gestion-utilisateur.html" >
                <b>Gestion d'utilisateurs</b>
                 </a>
@@ -68,50 +71,38 @@
     <div class="modal-content container">
       <div class="modal-body modal-body-sub_agile container">
         <div class="modal_body_left modal_body_left1">
-          <h3 class="agileinfo_sign">Modifier produit</h3>
+          <h3 class="agileinfo_sign">modifier utilisateur</h3>
 
           <form>
             <div class="styled-input agile-styled-input-top">
               <input
                 type="text"
-                placeholder="Produit"
-                name="produit"
+                placeholder="Nom"
+                name="Nom"
                 required=""
                 id="nom"
               />
             </div>
             <div class="styled-input">
               <input
-                type="text"
-                placeholder="Description"
-                name="Description"
+                type="password"
+                placeholder="Mot de passe"
+                name="Mot de passe"
                 required=""
-                id="description"
+                id="password"
               />
             </div>
             <div class="styled-input">
               <input
-                type="text"
-                name="quantité"
+                type="email"
+                name="E-mail"
                 required=""
-                placeholder="Quantité"
-                id="quantité"
+                placeholder="E-mail"
+                id="email"
               />
-            </div>
-            <div class="styled-input">
-              <input
-                name="Prix"
-                required=""
-                type="text"
-                placeholder="Prix"
-                id="prix"
-              />
-            </div>
-            <div class="styled-input">
-              <input type="file" id="Photo" accept="image/*" />
             </div>
             <div>
-              <a class="mt-2 btn btn-secondary" href="./nos-produit.html">
+              <a class="mt-2 btn btn-secondary" href="./gestion-utilisateur.html">
                 <i class="fa fa-arrow-left"></i> Annuler
               </a>
               <button class="mt-2 btn btn-primary" type="button" onclick="valider()">
@@ -125,6 +116,6 @@
       </div>
     </div>
     <script src="./js/securiser.js"></script>
-    <script src="./js/modifier-produit.js"></script>
+    <script src="./js/modifier-user.js"></script>
   </body>
 </html>
